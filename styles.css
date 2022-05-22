@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     font-size: 14px;
     font-family: 'Raleway', sans-serif;  
     color: white;
@@ -33,7 +34,6 @@
     border-radius: .8em 8em .8em .8em;
     padding: 3em 3em 2em 3em;
     width: 18em;
-    /* margin-left: 0.8em; */
 }
 
     .icon-container {
@@ -161,7 +161,7 @@ input[type="range"] {
     text-align: center;
     bottom: 0;
     position: fixed;
-    margin-left: 1em;
+    margin: 1em;
 }
 
     .attribution a {
@@ -186,6 +186,7 @@ input[type="range"] {
         font-family: 'Raleway', sans-serif;  
         height: 100vh;
         overflow: hidden;
+        color: white;
     }
 
     .container {
@@ -356,14 +357,11 @@ input[type="range"] {
       }
     
         .attribution {
-            display: flex;
-            align-items: center;
-            justify-content: center;
             font-size: 11px;
-             text-align: center;
-            position: relative;
-            margin-left: 1em;
-            bottom: -30em;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            margin: 2em;
     }
     
         .attribution a {
