@@ -1,6 +1,6 @@
 
-/* Mobile View */
-@media only screen and (max-width: 375px) {
+/* -----------Mobile View----------- */
+@media only screen and (max-width: 750px) {
     body {
     background-image: url(./images/bg-mobile.png);
     background-repeat: no-repeat;
@@ -10,7 +10,6 @@
     justify-content: center;
     font-size: 14px;
     font-family: 'Raleway', sans-serif;  
-    background-color: black; 
     color: white;
     height: 100vh;
     overflow: hidden;
@@ -73,7 +72,7 @@
 
     .bottom-box {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: left;
     flex-direction: column;
     gap: 1.8em;
@@ -81,22 +80,61 @@
     border-radius: .8em;
     padding: 3em 3em 2em 3em;
     width: 18em;
+    height: 8em;
     margin-left: 0.8em;
 }
 
     .bottom-box p {
     color: hsl(243, 100%, 93%);
+    font-size: 14px;
+}
+
+.range-labels {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12.5em;
+    margin: -2em 0;
+}
+
+.range-labels p {
+    font-size: .8em;
+}
+
+.white-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 11.5em;
+    height: 4.5em;
+    border-radius: .8em;
+    gap: .5em;
+    position: relative;
+}
+
+#gb-left {
+    color: black;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+#grayish-blue-text {
+    color: hsl(229, 7%, 55%);
+    font-size: .8em;
+    font-weight: 700;
 }
 
 input[type="range"] {
     -webkit-appearance: none;
-    margin-right: 15px;
-    width: 200px;
+    width: 240px;
     height: 12px;
     background: hsl(229, 57%, 11%);
     border-radius: 5px;
     background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
-    background-size: 70% 100%;
+    background-size: 50% 100%;
     background-repeat: no-repeat;
   }
   
@@ -130,3 +168,205 @@ input[type="range"] {
     color: hsl(228, 45%, 44%);
 }
 }
+
+
+/* ----------Desktop View---------- */
+@media only screen and (min-width: 750px) {
+    body {
+        background-image: url(./images/bg-desktop.png);
+        background-color:  hsl(229, 57%, 11%);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-family: 'Raleway', sans-serif;  
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 1.4em;
+       
+    }
+    
+        .top-box {
+        display: flex;
+        align-items: flex-start;
+        justify-content: left;
+        flex-direction: column;
+        gap: 1.8em;
+        background-color: hsl(228, 56%, 26%);
+        border-radius: .8em 8em .8em .8em;
+        padding: 3em 3em 2em 3em;
+        width: 20em;
+    }
+    
+        .icon-container {
+        display: flex;
+        align-items: stretch;
+        justify-content: stretch;
+    }
+    
+        .icon-1 {
+        width: 1.5em;
+        border-radius: .7em;
+        background-color: hsl(229, 57%, 11%);
+        padding: 1em;
+        margin: .6em;
+        object-fit: contain;
+    }
+    
+        .icon-2 {
+        width: 1.5em;
+        border-radius: .7em;
+        background-color: hsl(229, 57%, 11%);
+        padding: 1em;
+        margin: .6em;
+        object-fit: contain;
+    }
+    
+        .icon-3 {
+        width: 1.5em;
+        border-radius: .7em;
+        background-color: hsl(229, 57%, 11%);
+        padding: 1em;
+        margin: .6em;
+        object-fit: contain;
+    
+    }
+    
+        .bottom-box {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        flex-direction: column;
+        gap: 1.8em;
+        background-color: hsl(228, 56%, 26%);
+        border-radius: .8em;
+        padding: 2em 3em 3em 3em;
+        width: 40em;
+        height: 6em;
+        margin-left: 0.8em;
+    }
+    
+        .bottom-box p {
+        color: hsl(243, 100%, 93%);
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    
+    .range-labels {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 35em;
+        margin: -2em 0;
+    }
+    
+    .range-labels p {
+        font-size: .8em;
+    }
+    
+    .white-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        width: 11.5em;
+        height: 4.5em;
+        border-radius: .8em .8em 0 .8em;
+        gap: .5em;
+        top: -11em;
+        left: 28em;
+        position: relative; 
+        text-align: center;
+        
+    }
+
+    .white-box p {
+        position: relative;
+        top: -.5em;
+    }
+
+
+    .white-triangle {
+        border-bottom: 20px solid white;
+        border-left: 0px solid transparent;
+        border-right: 20px solid transparent;
+        height: 0;
+        vertical-align: top;
+        width: 0;
+        transform: rotate(180deg);
+        position: relative;
+        top: -13em;
+        left: 38.07em;
+    }
+    
+    #gb-left {
+        color: black;
+        font-size: 2.5em;
+        font-weight: 700;
+        position: relative;
+    }
+    
+    #grayish-blue-text {
+        color: hsl(229, 7%, 55%);
+        font-size: .8em;
+        font-weight: 700;
+    }
+
+    input[type="range"] {
+        -webkit-appearance: none;
+        width: 550px;
+        height: 16px;
+        background: hsl(229, 57%, 11%);
+        border-radius: 5px;
+        background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+        background-size: 50% 100%;
+        background-repeat: no-repeat;
+      }
+
+      
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 14px;
+        width: 14px;
+        border-radius: 50%;
+        background: white;
+        cursor: ew-resize;
+        box-shadow: 0 0 2px 0 #555;
+        transition: background .3s ease-in-out;
+      }
+      
+      input[type=range]::-webkit-slider-runnable-track  {
+        -webkit-appearance: none;
+        box-shadow: none;
+        border: none;
+        background: transparent;
+      }
+    
+        .attribution {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+             text-align: center;
+            position: relative;
+            margin-left: 1em;
+            bottom: -30em;
+    }
+    
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+    }
+    }
