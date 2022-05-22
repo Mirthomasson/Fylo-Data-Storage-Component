@@ -355,7 +355,13 @@ input[type="range"] {
         background: transparent;
       }
     
-        .attribution {
+      footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }  
+      
+      .attribution {
             font-size: 11px;
             text-align: center;
             position: fixed;
